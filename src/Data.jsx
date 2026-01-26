@@ -17,15 +17,15 @@ export const personalInfo = [
   },
   {
     title: "Address",
-    description:": Cairo,Egypt",
+    description: ": Cairo,Egypt",
   },
   {
     title: "Email",
-    description:": mai.e84.engineer@gmail.com",
+    description: ": mai.e84.engineer@gmail.com",
   },
   {
     title: "Languages",
-    description:": Arabic/English/frensh",
+    description: ": Arabic/English/frensh",
   },
 ];
 
@@ -45,5 +45,57 @@ export const status = [
   {
     no: "3+",
     title: "Certifications of concern",
+  },
+];
+
+export const skills = [
+  {
+    id: 1,
+    img: "img1",
+    title: "HTML",
+    level: "Advanced",
+    category: "category",
+  },
+  {
+    id: 2,
+    img: "img1",
+    title: "HTML",
+    level: "Advanced",
+    category: "category",
+  },
+  {
+    id: 3,
+    img: "img1",
+    title: "HTML",
+    level: "Advanced",
+    category: "category",
+  },
+  {
+    id: 4,
+    img: "img1",
+    title: "HTML",
+    level: "Advanced",
+    category: "category",
+  },
+  {
+    id: 5,
+    img: "img1",
+    title: "HTML",
+    level: "Advanced",
+    category: "category",
+  },
+  {
+    id: 6,
+    img: "img1",
+    title: "HTML",
+    level: "Advanced",
+    category: "category",
+  },
+  {
+    id: 7,
+    img: "img1",
+    title: "HTML",
+    level: "Advanced",
+    category: "category",
   },
 ];

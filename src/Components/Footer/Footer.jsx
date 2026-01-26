@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Footer() {
   return (
     <>
-      <main className="container flex justify-end items-end gap-x-2">
+      <main className="container flex justify-end items-end gap-x-2 fixed inset-y-0 right-0 ">
         <FontAwesomeIcon
           icon={faMoon}
           className="lg:text-md px-5 py-2 rounded-t-lg bg-rose-900 text-rose-300"
