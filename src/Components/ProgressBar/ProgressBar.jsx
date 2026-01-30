@@ -9,7 +9,7 @@ export default function ProgressBar() {
               <div className="flex items-center justify-between">
                 <span className=" font-medium">{skillName}</span>
                 <span className="font-medium text-start font-bold">
-                  {level}
+                  {level}%
                 </span>
               </div>
               <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
