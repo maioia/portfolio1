@@ -9,13 +9,13 @@ export default function About() {
   return (
     <>
       <main className="container">
-        <section className="">
-          <h2 className="section-title text-center my-5 lg:text-5xl p-6 font-extrabold">
+        <section className="about">
+          <h2 className="section-title head-style">
             About <span className="text-rose-900">Me</span>
           </h2>
           <div className="grid grid-cols-2">
             <div className="">
-              <h3 className="p-4 text-rose-900 text-2xl">personal infos</h3>
+              <h3 className="p-4 text-rose-900 text-3xl">personal infos</h3>
               <ul className="">
                 <PersonalInfo />
               </ul>

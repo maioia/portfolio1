@@ -20,14 +20,14 @@ export default function Home() {
             </h1>
             <div className="space-y-5">
               <p className="heading-description lg:text-3xl font-semibold">
-                frontEnd React.js developer 👩‍💻
+                I build things for the web. 👩‍💻
               </p>
               <p className="home-description lg:text-xl md:text-lg leading-7 lg:w-xl">
-                A front-end developer is a software professional who creates the
-                user-facing part of websites and web applications. I am an
-                Experienced Frontend Developer specializing in SPA web
-                applications. I have an eye for detail and can utilize
-                innovative skills in designing.
+                I'm a frontend developer specializing in building exceptional
+                digital experiences. Currently focused on creating accessible,
+                performant, and beautiful web applications. I am Frontend
+                Developer specializing in SPA web applications. I have an eye
+                for detail and can utilize innovative skills in designing.
               </p>
             </div>
             <Link

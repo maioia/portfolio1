@@ -4,10 +4,10 @@ import {
   faEnvelope,
   faFolderOpen,
   faHouse,
+  faRectangleList,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import { NavLink } from "react-router";
 
 export default function Navbar() {
@@ -83,8 +83,21 @@ export default function Navbar() {
                   } flex gap-3 hover:text-rose-300 transition-colors duration-200`;
                 }}
               >
-                <span>Portfolio</span>
+                <span className="">Portfolio</span>
                 <FontAwesomeIcon icon={faFolderOpen} />
+              </NavLink>
+            </li>
+            <li className="w-full rounded-s-lg h-1/2 bg-rose-900 p-3 text-white">
+              <NavLink
+                to={`skills`}
+                className={({ isActive }) => {
+                  return `${
+                    isActive ? "text-rose-300" : ""
+                  } flex gap-3 hover:text-rose-300 transition-colors duration-200`;
+                }}
+              >
+                <span>skills</span>
+                <FontAwesomeIcon icon={faRectangleList} />
               </NavLink>
             </li>
             <li className="w-full rounded-s-lg h-1/2 bg-rose-900 p-3 text-white">

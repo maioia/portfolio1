@@ -5,6 +5,7 @@ import Portfolio from "./pages/Portfolio/Portfolio";
 import Contact from "./pages/Contact/Contact";
 import AppLayout from "./Components/AppLayout/AppLayout";
 import NotFound from "./pages/NotFound/NotFound";
+import MySkills from "./pages/MySkills/MySkills";
 function App() {
   const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ function App() {
         {
           path: "portfolio",
           element: <Portfolio />,
+        },
+        {
+          path: "skills",
+          element: <MySkills />,
         },
         {
           path: "contact",
