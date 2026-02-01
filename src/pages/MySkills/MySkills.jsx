@@ -1,5 +1,6 @@
 import ProgressBar from "../../Components/ProgressBar/ProgressBar";
 import SkillCard from "../../Components/SkillCard/SkillCard";
+import skillsGirl from "../../assets/girlSkills.svg";
 export default function MySkills() {
   return (
     <>
@@ -18,11 +19,23 @@ export default function MySkills() {
               <SkillCard />
             </ul>
           </div>
-          <div className="proficiency-level grid lg:grid-cols-4">
-            <div className="p-4 lg:text-3xl text-rose-900 flex items-center text-center font-semibold">
-              <span>Proficiency level</span>
+          <div className="proficiency-level grid lg:grid-cols-3 place-items-center">
+            <div>
+              <img
+                src={skillsGirl}
+                alt="skills page img"
+                className="grid gird-cols-1 lg:grid-cols-[1fr-1.2fr] items-center gap-12 max-w-3xl w-full"
+              />
             </div>
-            <ul className="space-y-4 col-span-2">
+            <div className="p-4 lg:text-3xl text-rose-900 flex font-semibold">
+              <span className="text-center">
+                Proficiency
+                <br />
+                level
+              </span>
+            </div>
+
+            <ul className="space-y-4">
               <ProgressBar />
             </ul>
           </div>

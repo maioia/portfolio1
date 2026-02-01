@@ -8,12 +8,12 @@ export default function Status() {
       {status.map(({ no, title }, index) => {
         return (
           <div
-            className="status-box border border-gray-300 grid grid-cols-1 place-items-center lg:grid-cols-3 p-5 m-4"
+            className="status-box border border-gray-300 grid grid-cols-1 place-items-center gap-3 lg:grid-cols-3 p-3 m-2"
             key={index}
           >
-            <h3 className="statusNo text-rose-900 lg:text-7xl">{no}</h3>
-            <p className="status-title">{title}</p>
-            <FontAwesomeIcon icon={faGears} beatFade size="2xl" />{" "}
+            <h3 className="statusNo text-rose-900 lg:text-2xl">{no}</h3>
+            <p className="status-title text-sm">{title}</p>
+            <FontAwesomeIcon icon={faGears} beatFade size="xl" />{" "}
           </div>
         );
       })}

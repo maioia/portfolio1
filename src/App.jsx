@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { createBrowserRouter, Navigate, RouterProvider } from "react-router";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";
@@ -6,6 +6,7 @@ import Contact from "./pages/Contact/Contact";
 import AppLayout from "./Components/AppLayout/AppLayout";
 import NotFound from "./pages/NotFound/NotFound";
 import MySkills from "./pages/MySkills/MySkills";
+import ProjectsCard from "./Components/ProjectsCard/ProjectsCard";
 function App() {
   const router = createBrowserRouter([
     {
@@ -23,6 +24,28 @@ function App() {
         {
           path: "portfolio",
           element: <Portfolio />,
+          children: [
+            {
+              index: true,
+              element: <Navigate to={`featured`} replace />,
+            },
+            {
+              path: "featured",
+              element: <ProjectsCard/>,
+            },
+            {
+              path: "javascript",
+              element: <h2>Vanilla javascript</h2>,
+            },
+            {
+              path: "react",
+              element: <h2>React.js</h2>,
+            },
+            {
+              path: "next",
+              element: <h2>NEXT.js</h2>,
+            },
+          ],
         },
         {
           path: "skills",

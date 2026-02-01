@@ -14,12 +14,12 @@
 }
 
 @utility container {
-  @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl min-h-screen items-center;
+  @apply mx-auto px-4 sm:px-6 lg:px-8 min-h-screen items-center;
 }
 
 @layer component {
   .btn {
-    @apply px-4 py-2 rounded-lg bg-green-900 text-white hover:bg-green-300 transition-colors duration-200;
+    @apply px-4 py-2 rounded-lg bg-rose-900 text-white hover:bg-rose-300 transition-colors cursor-pointer duration-200;
   }
 
   .form-control {

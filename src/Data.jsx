@@ -12,14 +12,6 @@ export const personalInfo = [
     description: ": Egyptian",
   },
   {
-    title: "phone",
-    description: ": +20 106 298 0430",
-  },
-  {
-    title: "Address",
-    description: ": Cairo,Egypt",
-  },
-  {
     title: "Email",
     description: ": mai.e84.engineer@gmail.com",
   },
@@ -31,11 +23,11 @@ export const personalInfo = [
 
 export const status = [
   {
-    no: "15",
+    no: "15+",
     title: "Years of Experience",
   },
   {
-    no: "97+",
+    no: "20+",
     title: "Completed of projects",
   },
   {
@@ -98,4 +90,31 @@ export const levels = [
   { skillName: "TypeScript", level: 75 },
   { skillName: "Tailwind CSS", level: 90 },
   { skillName: "React", level: 70 },
+];
+
+export const projects = [
+  {
+    title: "E-commerce website",
+    description:
+      "AFeatured e-commerce website built with react.js and tailwind css, allowing users to browse and purchase products online.",
+    imgUrl: "eCommerce",
+    techStack: ["react.js", "tailwind css"],
+    projectUrl: "https://www.google.com/",
+  },
+  {
+    title: "E-commerce website",
+    description:
+      "AFeatured e-commerce website built with react.js and tailwind css, allowing users to browse and purchase products online.",
+    imgUrl: "eCommerce",
+    techStack: ["react.js", "tailwind css"],
+    projectUrl: "https://www.google.com/",
+  },
+  {
+    title: "E-commerce website",
+    description:
+      "AFeatured e-commerce website built with react.js and tailwind css, allowing users to browse and purchase products online.",
+    imgUrl: "eCommerce",
+    techStack: ["react.js", "tailwind css"],
+    projectUrl: "https://www.google.com/",
+  },
 ];
