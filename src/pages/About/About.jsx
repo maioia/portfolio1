@@ -14,6 +14,13 @@ export default function About() {
           </h1>
           <div className="">
             <div className="flex">
+              <div className="mx-auto">
+                <img
+                  src={aboutGirl}
+                  alt="about page img"
+                  className="max-w-xl w-full"
+                />
+              </div>
               <div className="info">
                 <h3 className="p-4 text-rose-900 text-3xl">personal infos</h3>
                 <ul className="">
@@ -27,13 +34,6 @@ export default function About() {
                 >
                   Download My CV <FontAwesomeIcon icon={faFileArrowDown} />
                 </Link>
-              </div>
-              <div className="mx-auto">
-                <img
-                  src={aboutGirl}
-                  alt="about page img"
-                  className="max-w-xl w-full"
-                />
               </div>
             </div>
             <div className="about-status flex py-4">

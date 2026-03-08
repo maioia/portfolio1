@@ -54,7 +54,7 @@ export default function Portfolio() {
       </aside>
       <div className="col-span-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 my-4">
-          <h1 className="mx-auto self-center text-3xl">
+          <h1 className="mx-auto self-center text-3xl head-style text-rose-900">
             My portfolio projects
           </h1>
           <Outlet />

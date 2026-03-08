@@ -8,6 +8,7 @@
 [4] forms 📲----> formik
 [5] validation ✅--> yup
 [6] fonts ✍️ --> font source library --> poppins font
+[7] Add Framer motion to switch pages with animation
 
 # variables
 
