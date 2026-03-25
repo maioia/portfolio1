@@ -14,15 +14,17 @@ export default function AppLayout() {
 
   return (
     <>
-      <div className="flex justify-between items-center">
-        <div className="">
+      <main className="grid grid-cols-10 bg-green-400">
+        <aside className="lg:col-span-1">
+          <Navbar />
+        </aside>
+        <div className="lg:col-span-9 bg-[#3B9797]">
           <Outlet />
         </div>
-        <div className="">
-          <Navbar />
-        </div>
-      </div>
-      <Footer />
+        {/* <div className="lg:col-span-1  bg-[#16476A]">
+          <Footer />
+        </div> */}
+      </main>
     </>
   );
 }

@@ -9,13 +9,17 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router";
+import Footer from "../Footer/Footer";
 
 export default function Navbar() {
   return (
     <>
       {/* Main Navigation */}
-      <aside className="transition-all duration-300">
-        <nav className="flex flex-col lg:justify-center items-center gap-y-3 z-40">
+      <aside className="flex flex-col items-center justify-between transition-all duration-300">
+        <div>
+          <Footer />
+        </div>
+        <nav className="container flex flex-col lg:justify-center items-center z-40">
           {/* toggle and close button */}
           <div className="md:hidden flex flex-col gap-2 items-center justify-center z-40 top-4 right-0">
             <button className="">
@@ -47,9 +51,9 @@ export default function Navbar() {
           </div>
 
           {/* main menu */}
-          <div>
-            <ul className="hidden md:flex flex-col gap-3 lg:text-l">
-              <li className="w-full rounded-s-lg h-1/2 bg-rose-900 p-3 text-white">
+          <aside>
+            <ul className="hidden lg:block bg-yellow-300 flex flex-col justify-center items-center *:bg-[#16476A] space-y-3 *:p-2 lg:text-l">
+              <li className="w-full rounded-s-lg h-1/2 p-3 text-white">
                 <NavLink
                   to={`/`}
                   className={({ isActive }) => {
@@ -62,7 +66,7 @@ export default function Navbar() {
                   <FontAwesomeIcon icon={faHouse} />
                 </NavLink>
               </li>
-              <li className="w-full rounded-s-lg h-1/2 bg-rose-900 p-3 text-white">
+              <li className="w-full rounded-s-lg h-1/2 p-3 text-white">
                 <NavLink
                   to={`about`}
                   className={({ isActive }) => {
@@ -75,7 +79,7 @@ export default function Navbar() {
                   <FontAwesomeIcon icon={faUser} />
                 </NavLink>
               </li>
-              <li className="w-full rounded-s-lg h-1/2 bg-rose-900 p-3 text-white">
+              <li className="w-full rounded-s-lg h-1/2  p-3 text-white">
                 <NavLink
                   to={`portfolio`}
                   className={({ isActive }) => {
@@ -115,7 +119,7 @@ export default function Navbar() {
                 </NavLink>
               </li>
             </ul>
-          </div>
+          </aside>
         </nav>
       </aside>
     </>

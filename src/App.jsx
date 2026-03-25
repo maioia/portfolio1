@@ -7,6 +7,7 @@ import AppLayout from "./Components/AppLayout/AppLayout";
 import NotFound from "./pages/NotFound/NotFound";
 import MySkills from "./pages/MySkills/MySkills";
 import ProjectsCard from "./Components/ProjectsCard/ProjectsCard";
+import VantaBackground from "./Components/VantaBackground/VantaBackground";
 function App() {
   const router = createBrowserRouter([
     {
@@ -31,7 +32,7 @@ function App() {
             },
             {
               path: "featured",
-              element: <ProjectsCard/>,
+              element: <ProjectsCard />,
             },
             {
               path: "javascript",

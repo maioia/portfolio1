@@ -27,7 +27,7 @@
   }
 
   .head-style {
-    @apply text-center my-5 lg:text-5xl p-6 font-extrabold;
+    @apply text-center my-5 lg:text-5xl p-6 font-extrabold text-[#132440];
   }
   .sub-head-style {
     @apply text-gray-600 text-3xl;

@@ -12,6 +12,9 @@
 
 # variables
 
+color palette used : 🔗 https://colorhunt.co/palette/bf092f13244016476a3b9797
+spinner Page : 🔗 https://loading.io/spinner/vortex/-spiral-vortext-spinner-whirl-tornado
+
 # Folder Structure
 
 # Routing
