@@ -1,0 +1,109 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 22px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #8CC7C4;
+  animation: l10 1.5s infinite linear;
+}
+@keyframes l10 {
+  0% {
+    box-shadow:
+      0 -30px #DB1A1A,
+      calc(30px * 0.707) calc(-30px * 0.707) #2C687B,
+      30px 0 #DB1A1A,
+      0 0 #2C687B,
+      0 0 #DB1A1A,
+      0 0 #2C687B,
+      0 0 #DB1A1A,
+      0 0 #2C687B;
+  }
+  12.5% {
+    box-shadow:
+      0 0 #DB1A1A,
+      calc(30px * 0.707) calc(-30px * 0.707) #2C687B,
+      30px 0 #DB1A1A,
+      calc(30px * 0.707) calc(30px * 0.707) #2C687B,
+      0 0 #DB1A1A,
+      0 0 #2C687B,
+      0 0 #DB1A1A,
+      0 0 #2C687B;
+  }
+  25% {
+    box-shadow:
+      0 0 #DB1A1A,
+      0 0 #2C687B,
+      30px 0 #DB1A1A,
+      calc(30px * 0.707) calc(30px * 0.707) #2C687B,
+      0 30px #DB1A1A,
+      0 0 #2C687B,
+      0 0 #DB1A1A,
+      0 0 #2C687B;
+  }
+  37.5% {
+    box-shadow:
+      0 0 #DB1A1A,
+      0 0 #2C687B,
+      0 0 #DB1A1A,
+      calc(30px * 0.707) calc(30px * 0.707) #2C687B,
+      0 30px #DB1A1A,
+      calc(-30px * 0.707) calc(30px * 0.707) #2C687B,
+      0 0 #DB1A1A,
+      0 0 #2C687B;
+  }
+  50% {
+    box-shadow:
+      0 0 #DB1A1A,
+      0 0 #2C687B,
+      0 0 #DB1A1A,
+      0 0 #2C687B,
+      0 30px #DB1A1A,
+      calc(-30px * 0.707) calc(30px * 0.707) #2C687B,
+      -30px 0 #DB1A1A,
+      0 0 #2C687B;
+  }
+  62.5% {
+    box-shadow:
+      0 0 #DB1A1A,
+      0 0 #2C687B,
+      0 0 #DB1A1A,
+      0 0 #2C687B,
+      0 0 #DB1A1A,
+      calc(-30px * 0.707) calc(30px * 0.707) #2C687B,
+      -30px 0 #DB1A1A,
+      calc(-30px * 0.707) calc(-30px * 0.707) #2C687B;
+  }
+  75% {
+    box-shadow:
+      0 -30px #DB1A1A,
+      0 0 #2C687B,
+      0 0 #DB1A1A,
+      0 0 #2C687B,
+      0 0 #DB1A1A,
+      0 0 #2C687B,
+      -30px 0 #DB1A1A,
+      calc(-30px * 0.707) calc(-30px * 0.707) #2C687B;
+  }
+  87.5% {
+    box-shadow:
+      0 -30px #DB1A1A,
+      calc(30px * 0.707) calc(-30px * 0.707) #2C687B,
+      0 0 #DB1A1A,
+      0 0 #2C687B,
+      0 0 #DB1A1A,
+      0 0 #2C687B,
+      0 0 #DB1A1A,
+      calc(-30px * 0.707) calc(-30px * 0.707) #2C687B;
+  }
+  100% {
+    box-shadow:
+      0 -30px #DB1A1A,
+      calc(30px * 0.707) calc(-30px * 0.707) #2C687B,
+      30px 0 #DB1A1A,
+      0 0 #2C687B,
+      0 0 #DB1A1A,
+      0 0 #2C687B,
+      0 0 #DB1A1A,
+      0 0 #2C687B;
+  }
+}

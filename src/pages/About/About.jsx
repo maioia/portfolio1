@@ -10,19 +10,21 @@ export default function About() {
       <main className="container">
         <section className="about">
           <h1 className="section-title head-style">
-            About <span className="text-rose-900">Me</span>
+            About <span className="text-[#DB1A1A]">Me</span>
           </h1>
           <div className="">
-            <div className="flex">
+            <div className="lg:flex md:flex">
               <div className="mx-auto">
                 <img
                   src={aboutGirl}
                   alt="about page img"
-                  className="max-w-xl w-full"
+                  className="max-w-xs lg:max-w-xl w-full"
                 />
               </div>
               <div className="info">
-                <h3 className="p-4 text-rose-900 text-3xl">personal infos</h3>
+                <h3 className="p-4 text-[#2C687B] text-2xl lg:text-3xl">
+                  personal infos
+                </h3>
                 <ul className="">
                   <PersonalInfo />
                 </ul>
@@ -30,13 +32,13 @@ export default function About() {
                   to="/public/pdf/MaiAhmedResume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-rose-300 border-2 border-white rounded-lg shadow-md px-3 py-2 my-4 lg:text-md hover:bg-rose-900 hover:text-white transition-all duration-400 ease-in-out"
+                  className="bg-[#2C687B] border-2 border-[#FFF6F6] rounded-lg shadow-md px-3 py-2 my-4 text-[#FFF6F6] lg:text-md hover:bg-[#FFF6F6] hover:text-[#2C687B] transition-all duration-400 ease-in-out"
                 >
                   Download My CV <FontAwesomeIcon icon={faFileArrowDown} />
                 </Link>
               </div>
             </div>
-            <div className="about-status flex py-4">
+            <div className="lg:flex md:flex py-4">
               <Status />
             </div>
           </div>

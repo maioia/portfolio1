@@ -6,28 +6,16 @@ export default function MySkills() {
     <>
       <main className="container">
         <div className="title text-center">
-          <span className="head-style text-rose-900">
+          <span className="head-style text-[#DB1A1A">
             Skills and technologies
           </span>
           <p className="sub-head-style">
             Here are the technologies I've been working with recent :
           </p>
         </div>
-        <section className="Skills-body">
-          <div className="skill-card">
-            <ul className="grid lg:grid-cols-3 my-4">
-              <SkillCard />
-            </ul>
-          </div>
-          <div className="proficiency-level grid lg:grid-cols-3 place-items-center">
-            <div>
-              <img
-                src={skillsGirl}
-                alt="skills page img"
-                className="grid gird-cols-1 lg:grid-cols-[1fr-1.2fr] items-center gap-12 max-w-3xl w-full"
-              />
-            </div>
-            <div className="p-4 lg:text-3xl text-rose-900 flex font-semibold">
+        <section className="Skills-body lg:py-12">
+          <div className="lg:grid lg:grid-cols-3">
+            <div className="p-4 lg:text-3xl text-lg text-center text-[#DB1A1A] lg:flex font-semibold lg:items-center lg:justify-center">
               <span className="text-center">
                 Proficiency
                 <br />
@@ -35,8 +23,24 @@ export default function MySkills() {
               </span>
             </div>
 
-            <ul className="space-y-4">
-              <ProgressBar />
+            <div>
+              {" "}
+              <ul className="space-y-4 mb-5">
+                <ProgressBar />
+              </ul>
+            </div>
+
+            <div>
+              <img
+                src={skillsGirl}
+                alt="skills page img"
+                className=" grid gird-cols-1 lg:grid-cols-[1fr-1.2fr] items-center gap-12 lg:max-w-3xl w-xs mx-auto"
+              />
+            </div>
+          </div>
+          <div className="skill-card">
+            <ul className="grid lg:grid-cols-6 md:grid-cols-3 my-4">
+              <SkillCard />
             </ul>
           </div>
         </section>

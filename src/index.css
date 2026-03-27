@@ -13,23 +13,48 @@
   }
 }
 
+@theme {
+  --animate-slideIn: slide-in 300ms ease-out;
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
 @utility container {
   @apply mx-auto px-4 sm:px-6 lg:px-8 min-h-screen items-center;
 }
 
 @layer component {
   .btn {
-    @apply px-4 py-2 rounded-lg bg-rose-900 text-white hover:bg-rose-300 transition-colors cursor-pointer duration-200;
+    @apply px-2 py-1 text-sm rounded-md bg-[#DB1A1A] text-[#FFF6F6] hover:bg-[#FFF6F6]  hover:text-[#2C687B] transition-colors cursor-pointer duration-200;
   }
 
   .form-control {
-    @apply px-3 py-2 rounded-md border border-red-500;
+    @apply px-3 py-2 rounded-md border border-[#DB1A1A];
   }
 
   .head-style {
-    @apply text-center my-5 lg:text-5xl p-6 font-extrabold text-[#132440];
+    @apply text-center lg:my-5 lg:text-5xl text-3xl p-6 font-extrabold text-[#DB1A1A];
   }
   .sub-head-style {
-    @apply text-gray-600 text-3xl;
+    @apply text-gray-600 lg:text-3xl;
+  }
+}
+
+.heading {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid transparent;
+  width: 0;
+  animation: typing 2s steps(100) infinite;
+}
+@keyframes typing {
+  to {
+    width: 100%;
   }
 }

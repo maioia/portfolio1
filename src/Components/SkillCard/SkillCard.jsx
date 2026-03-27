@@ -9,18 +9,18 @@ export default function SkillCard() {
     <>
       {skills.map(({ title, skill1, skill2, skill3, skill4 }, index) => {
         return (
-          <li className="px-4 border-rose-300 border rounded m-2" key={index}>
+          <li className="px-4 border-gray-300 border rounded m-2" key={index}>
             <FontAwesomeIcon
               icon={faCircle}
               size="xs"
-              className="text-rose-900"
+              className="text-[#DB1A1A]"
             />
-            <span className="text-xl p-3 text-rose-900">{title}</span>
-            <ul className="*:pb-2 space-y-2">
+            <span className="text-lg p-3 text-[#2C687B]">{title}</span>
+            <ul className="*:pb-2 space-y-2 *:text-sm">
               <li className="">
                 <FontAwesomeIcon
                   icon={faSquareArrowUpRight}
-                  className="me-1 text-gray-400"
+                  className="me-1 text-[#2C687B]"
                 />
                 {skill1}
               </li>
@@ -28,7 +28,7 @@ export default function SkillCard() {
                 <span>
                   <FontAwesomeIcon
                     icon={faSquareArrowUpRight}
-                    className="me-1 text-gray-400"
+                    className="me-1 text-[#2C687B]"
                   />
                   {skill2}
                 </span>
@@ -37,7 +37,7 @@ export default function SkillCard() {
                 <span>
                   <FontAwesomeIcon
                     icon={faSquareArrowUpRight}
-                    className="me-1 text-gray-400"
+                    className="me-1 text-[#2C687B]"
                   />
                   {skill3}
                 </span>
@@ -46,7 +46,7 @@ export default function SkillCard() {
                 <span>
                   <FontAwesomeIcon
                     icon={faSquareArrowUpRight}
-                    className="me-1 text-gray-400"
+                    className="me-1 text-[#2C687B]"
                   />
                   {skill4}
                 </span>

@@ -7,12 +7,12 @@ export default function ProgressBar() {
           <li key={skillName} className="">
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <span className=" font-medium">{skillName}</span>
-                <span className="font-medium text-start font-bold">
+                <span className=" lg:font-medium text-xs">{skillName}</span>
+                <span className="font-medium text-star text-xs">
                   {level}%
                 </span>
               </div>
-              <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+              <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
                 <div
                   className="bg-gray-400 h-2 rounded-full"
                   style={{ width: `${level}%` }}
