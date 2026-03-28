@@ -5,7 +5,9 @@ import {
   faEnvelope,
   faFolderOpen,
   faHouse,
+  faMoon,
   faRectangleList,
+  faSun,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,7 +20,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({ toggleTheme, theme }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function toggleMenu() {
@@ -28,7 +30,7 @@ export default function Navbar() {
   return (
     <>
       {/* Main Navigation */}
-      <aside className="flex lg:bg-[#2C687B] lg:flex-col items-center justify-evenly transition-all duration-300">
+      <aside className="flex lg:bg-[#2C687B] dark:bg-[#132440] lg:flex-col items-center justify-evenly transition-all duration-300">
         <div className="flex items-center justify-between lg:justify-center">
           <img
             src={logo}
@@ -139,6 +141,32 @@ export default function Navbar() {
               <FontAwesomeIcon icon={faSquareBehance} size="xs" />
             </Link>
           </div>
+
+          <button
+            type="text"
+            className=""
+            // className={({ isActive }) => {
+            //   return `${
+            //     isActive ? " bg-[#8CC7C4] rounded-full" : ""
+            //   } hover:text-[#DB1A1A] transition-all duration-200`;
+            // }}
+            onClick={toggleTheme}
+          >
+            {theme === "dark" ? (
+              <FontAwesomeIcon
+                icon={faMoon}
+                size="xl"
+                className="text-[#8CC7C4]"
+              />
+            ) : (
+              <FontAwesomeIcon
+                icon={faSun}
+                size="xl"
+                className="text-[#FCBF49]"
+              />
+            )}
+          </button>
+
           <span className="text-[10px] w-30 text-[#FFF6F6]/60">
             All Copy Rights &copy; reserved to Mai Ahmed 2026
           </span>

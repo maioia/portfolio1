@@ -7,7 +7,7 @@ import {
   faLinkedin,
   faSquareBehance,
 } from "@fortawesome/free-brands-svg-icons";
-export default function Home() {
+export default function Home({ toggleTheme }) {
   return (
     <>
       <main className="px-7">
@@ -35,14 +35,11 @@ export default function Home() {
               </p>
             </div>
             <div className="flex justify-evenly items-center gap-3">
-              <Link
-                to="/about"
-                className="bg-[#2C687B] border-2 border-[#8CC7C4] rounded-xs shadow-md px-3 py-2 my-4 text-[#FFF6F6] hover:bg-[#DB1A1A] hover:text-[#8CC7C4] transition-all duration-400 ease-in-out"
-              >
-                <span className="lg:p-2 text-sm p-1 lg:text-sm">
+              <Link to="/about" className="">
+                <span className="bg-[#2C687B] border-2 border-[#FFF6F6] rounded-lg shadow-md px-2 py-3 text-[#FFF6F6] lg:text-md hover:bg-[#FFF6F6] hover:text-[#2C687B] transition-all duration-400 ease-in-out">
                   More About Me
+                  <FontAwesomeIcon icon={faArrowRightToBracket} />
                 </span>
-                <FontAwesomeIcon icon={faArrowRightToBracket} />
               </Link>
               <div className="social flex gap-4 items-center justify-center lg:text-2xl">
                 <Link

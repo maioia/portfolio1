@@ -7,16 +7,26 @@ import AppLayout from "./Components/AppLayout/AppLayout";
 import NotFound from "./pages/NotFound/NotFound";
 import MySkills from "./pages/MySkills/MySkills";
 import ProjectsCard from "./Components/ProjectsCard/ProjectsCard";
-import VantaBackground from "./Components/VantaBackground/VantaBackground";
+import { useState } from "react";
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  function toggleTheme() {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  }
+
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <AppLayout />,
+      element: <AppLayout toggleTheme={toggleTheme} theme={theme} />,
       children: [
         {
           index: true,
-          element: <Home />,
+          element: <Home toggleTheme={toggleTheme} theme={theme} />,
         },
         {
           path: "about",
