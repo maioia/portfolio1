@@ -18,14 +18,17 @@ import {
   faLinkedin,
   faSquareBehance,
 } from "@fortawesome/free-brands-svg-icons";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 
-export default function Navbar({ toggleTheme, theme }) {
+export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   function toggleMenu() {
     setIsMenuOpen(!isMenuOpen);
   }
+
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <>

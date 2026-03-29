@@ -18,7 +18,7 @@ export default function AppLayout({ toggleTheme, theme }) {
           <Navbar toggleTheme={toggleTheme} theme={theme} />
         </aside>
         <div className="lg:col-span-9 col-span-10 bg-[#FFF6F6]">
-          <Outlet toggleTheme={toggleTheme} theme={theme} />
+          <Outlet />
         </div>
       </main>
     </>

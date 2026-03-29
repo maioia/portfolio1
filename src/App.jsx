@@ -8,25 +8,18 @@ import NotFound from "./pages/NotFound/NotFound";
 import MySkills from "./pages/MySkills/MySkills";
 import ProjectsCard from "./Components/ProjectsCard/ProjectsCard";
 import { useState } from "react";
+import ThemeProvider from "./context/ThemeContext";
 function App() {
   const [theme, setTheme] = useState("light");
-
-  function toggleTheme() {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
-  }
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <AppLayout toggleTheme={toggleTheme} theme={theme} />,
+      element: <AppLayout />,
       children: [
         {
           index: true,
-          element: <Home toggleTheme={toggleTheme} theme={theme} />,
+          element: <Home />,
         },
         {
           path: "about",
@@ -76,7 +69,9 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={router} />
+      <ThemeProvider>
+        <RouterProvider router={router} />
+      </ThemeProvider>
     </>
   );
 }

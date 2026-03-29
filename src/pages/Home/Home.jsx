@@ -10,7 +10,7 @@ import {
 export default function Home({ toggleTheme }) {
   return (
     <>
-      <main className="px-7">
+      <main className="px-7 dark:bg-gray-800 dark:text-white">
         <section className="lg:flex lg:flex-row flex-col justify-evenly items-center min-h-screen">
           <div className="">
             <img

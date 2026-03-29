@@ -19,6 +19,14 @@ https://colorhunt.co/palette/db1a1afff6f68cc7c42c687b
 [#8CC7C4]
 [#2C687B]
 
+# Dark theme color:
+
+https://colorhunt.co/palette/003049d62828f77f00fcbf49
+[#003049]
+[#D62828]
+[#F77F00]
+[#FCBF49]
+
 # Folder Structure
 
 # Routing
