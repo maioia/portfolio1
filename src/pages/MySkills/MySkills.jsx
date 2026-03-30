@@ -4,7 +4,7 @@ import skillsGirl from "../../assets/girlSkills.svg";
 export default function MySkills() {
   return (
     <>
-      <main className="container dark:bg-black text-white">
+      <main className="container dark:bg-black dark:text-white">
         <div className="title text-center">
           <span className="head-style text-[#DB1A1A">
             Skills and technologies
