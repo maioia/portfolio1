@@ -27,14 +27,18 @@ https://colorhunt.co/palette/003049d62828f77f00fcbf49
 [#D62828]
 [#F77F00]
 [#FCBF49]
+[#132440]
 
 # Folder Structure
 
 # Routing
 
 - ReactRouter using Data mode.
+
+# Project actions:
+
+- Toggling between Dark mode and light mode using Theme-Context.
+- Adding animation between pages using motion-framer.
+- Adding form submission and validation using formik and Yup.
 - Add Loading screen using Loading component and module.css file
-
-# Toggling between Dark mode and light mode using Theme-Context
-
-# Adding animation between pages using motion-framer
+- adding RTL or switch to arabic language
