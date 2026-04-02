@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <>
       {/* Main Navigation */}
-      <aside className=" flex lg:bg-[#2C687B] dark:bg-[#132440] lg:flex-col items-center justify-evenly transition-all duration-300">
+      <aside className=" flex h-full lg:bg-[#2C687B] dark:bg-[#132440] lg:flex-col items-center justify-evenly transition-all duration-300">
         <div className="flex items-center justify-between lg:justify-center">
           <img
             src={logo}

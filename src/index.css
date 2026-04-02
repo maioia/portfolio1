@@ -41,7 +41,7 @@
   }
 
   .head-style {
-    @apply text-center lg:my-5 lg:text-5xl text-3xl p-6 font-extrabold text-[#DB1A1A];
+    @apply text-center lg:py-5 lg:text-5xl text-3xl font-extrabold text-[#DB1A1A];
   }
   .sub-head-style {
     @apply text-gray-600 lg:text-3xl;

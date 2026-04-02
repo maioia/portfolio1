@@ -1,4 +1,8 @@
-import { createBrowserRouter, Navigate, RouterProvider } from "react-router";
+import {
+  createBrowserRouter,
+  redirect,
+  RouterProvider,
+} from "react-router";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";
@@ -12,6 +16,8 @@ import ThemeProvider from "./context/ThemeContext";
 function App() {
   const [theme, setTheme] = useState("light");
 
+  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -19,19 +25,23 @@ function App() {
       children: [
         {
           index: true,
+          loader: () => delay(800),
           element: <Home />,
         },
         {
           path: "about",
+          loader: () => delay(800),
           element: <About />,
         },
         {
           path: "portfolio",
+          loader: () => delay(800),
           element: <Portfolio />,
+
           children: [
             {
               index: true,
-              element: <Navigate to={`featured`} replace />,
+              loader: () => redirect("featured"),
             },
             {
               path: "featured",
@@ -53,14 +63,17 @@ function App() {
         },
         {
           path: "skills",
+          loader: () => delay(800),
           element: <MySkills />,
         },
         {
           path: "contact",
+          loader: () => delay(800),
           element: <Contact />,
         },
         {
           path: "*",
+          loader: () => delay(800),
           element: <NotFound />,
         },
       ],

@@ -1,11 +1,10 @@
 import styles from "./Loading.module.css";
 const Loading = () => {
+  console.log(styles.loader);
   return (
-    <>
-      <main className="flex justify-center items-center min-h-screen">
-        <div class={styles.loader}></div>
-      </main>
-    </>
+    <div className="fixed inset-0 bg-white/70 flex justify-center items-center z-50">
+      <div className={styles.loader}></div>
+    </div>
   );
 };
 
