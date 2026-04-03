@@ -1,8 +1,4 @@
-import {
-  createBrowserRouter,
-  redirect,
-  RouterProvider,
-} from "react-router";
+import { createBrowserRouter, redirect, RouterProvider } from "react-router";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";
@@ -10,9 +6,9 @@ import Contact from "./pages/Contact/Contact";
 import AppLayout from "./Components/AppLayout/AppLayout";
 import NotFound from "./pages/NotFound/NotFound";
 import MySkills from "./pages/MySkills/MySkills";
-import ProjectsCard from "./Components/ProjectsCard/ProjectsCard";
 import { useState } from "react";
 import ThemeProvider from "./context/ThemeContext";
+import PortfolioCard from "./Components/PortfolioCard/PortfolioCard";
 function App() {
   const [theme, setTheme] = useState("light");
 
@@ -35,7 +31,6 @@ function App() {
         },
         {
           path: "portfolio",
-          loader: () => delay(800),
           element: <Portfolio />,
 
           children: [
@@ -45,19 +40,23 @@ function App() {
             },
             {
               path: "featured",
-              element: <ProjectsCard />,
+
+              element: <PortfolioCard />,
             },
             {
               path: "javascript",
-              element: <h2>Vanilla javascript</h2>,
+
+              element: <PortfolioCard />,
             },
             {
               path: "react",
-              element: <h2>React.js</h2>,
+
+              element: <PortfolioCard />,
             },
             {
               path: "next",
-              element: <h2>NEXT.js</h2>,
+
+              element: <PortfolioCard />,
             },
           ],
         },

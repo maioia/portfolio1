@@ -6,7 +6,6 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function AppLayout({ toggleTheme, theme }) {
   const location = useLocation();
   const navigation = useNavigation();
-  console.log(navigation.state);
   return (
     <>
       <main className="min-h-screen lg:grid lg:grid-cols-10 bg-[#FFF6F6]">

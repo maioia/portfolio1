@@ -5,11 +5,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Portfolio() {
   return (
     <main className="container lg:grid lg:grid-cols-12">
-      <aside className="col-span-2">
-        <section className="w-full lg:grid col-span-12 mx-auto self-center">
-          <img src={portfolioGirl} alt="portfolio img" className="w-[60%] mx-auto py-3 lg:w-full max-w-3xl" />
-        </section>
-        <ul className="*:bg-[#2C687B] ">
+      <h1 className="mx-auto self-center text-3xl head-style lg:col-span-12 text-[#DB1A1A]">
+        My portfolio projects
+      </h1>
+      <aside className="col-span-3">
+        <div className="w-full lg:grid col-span-12 mx-auto self-center">
+          <img
+            src={portfolioGirl}
+            alt="portfolio img"
+            className="w-[60%] mx-auto py-3 lg:w-full max-w-3xl"
+          />
+        </div>
+        <ul className="*:bg-[#2C687B] *:mb-2">
           <li>
             <NavLink
               to="featured"
@@ -17,7 +24,7 @@ export default function Portfolio() {
                 return `${isActive ? "bg-[#DB1A1A] text-[#FFF6F6]" : ""} w-full p-3 text-[#8CC7C4]`;
               }}
             >
-              Featured projects <FontAwesomeIcon icon={faCaretRight} />
+              HTML CSS projects <FontAwesomeIcon icon={faCaretRight} />
             </NavLink>
           </li>
           <li>
@@ -27,7 +34,8 @@ export default function Portfolio() {
                 return `${isActive ? "bg-[#DB1A1A] text-[#FFF6F6]" : ""} w-full p-3 text-[#8CC7C4]`;
               }}
             >
-              Javascript projects <FontAwesomeIcon icon={faCaretRight} />
+              Vanilla Javascript projects{" "}
+              <FontAwesomeIcon icon={faCaretRight} />
             </NavLink>
           </li>
           <li>
@@ -52,11 +60,8 @@ export default function Portfolio() {
           </li>
         </ul>
       </aside>
-      <div className="col-span-10">
-        <h1 className="mx-auto self-center text-3xl head-style text-[#DB1A1A]">
-          My portfolio projects
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-0 my-4">
+      <div className="col-span-9 m-5 bg-amber-900">
+        <div className="">
           <Outlet />
         </div>
       </div>

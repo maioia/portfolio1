@@ -2,13 +2,14 @@
 
 # Project Packages
 
-[1] Design UI🎨 --> TailwindCSS
+[1] Design UI🎨 ---> TailwindCSS
 [2] Icon ⚒️ --> fontAweasome
 [3] routing ➡️ ---> reactRouter
-[4] forms 📲----> formik
-[5] validation ✅--> yup
+[4] forms 📲 ----> formik
+[5] validation ✅ --> yup
 [6] fonts ✍️ --> font source library --> poppins font
 [7] motion framer ---> add animation between components
+[8] swiper 📸 ---> library for slider in portfolio page
 
 # variables
 
@@ -41,4 +42,5 @@ https://colorhunt.co/palette/003049d62828f77f00fcbf49
 - Adding animation between pages using motion-framer.
 - Adding form submission and validation using formik and Yup.
 - Add Loading screen using Loading component and module.css file
-- adding RTL or switch to arabic language
+- Adding RTL or switch to arabic language.
+- Add slider using swiper library to portfolio page.
