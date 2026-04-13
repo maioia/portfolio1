@@ -8,7 +8,7 @@ export default function AppLayout({ toggleTheme, theme }) {
   const navigation = useNavigation();
   return (
     <>
-      <main className="min-h-screen lg:grid lg:grid-cols-10 bg-[#FFF6F6]">
+      <main className="min-h-screen lg:grid lg:grid-cols-10 bg-[#FFF6F6] dark:bg-gray-800">
         <aside
           className={`${theme === "dark" ? "dark" : ""} lg:col-span-1 xs:hidden`}
         >
@@ -19,7 +19,7 @@ export default function AppLayout({ toggleTheme, theme }) {
         ) : (
           <AnimatePresence mode="wait">
             <motion.div
-              className="lg:col-span-9 col-span-10 bg-[#FFF6F6]"
+              className="lg:col-span-9 col-span-10  dark:bg-gray-800 bg-[#FFF6F6]"
               key={location.pathname}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}

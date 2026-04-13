@@ -94,27 +94,51 @@ export const levels = [
 
 export const projects = [
   {
-    title: "E-commerce website",
-    description:
-      "AFeatured e-commerce website built with react.js and tailwind css, allowing users to browse and purchase products online.",
-    imgUrl: "eCommerce",
-    techStack: ["react.js", "tailwind css"],
+    title: "HTML CSS Bootstrap",
+    category: "featured",
+    description: "AFeatured HTML CSS Bootstrap site.",
+    imgUrl: "../src/assets/HTMLCSSBootstrap.png",
+    techStack: ["HTML", "css"],
     projectUrl: "https://www.google.com/",
   },
   {
-    title: "E-commerce website",
-    description:
-      "AFeatured e-commerce website built with react.js and tailwind css, allowing users to browse and purchase products online.",
-    imgUrl: "eCommerce",
-    techStack: ["react.js", "tailwind css"],
+    title: "HTML CSS projects",
+    category: "featured",
+    description: "AFeatured HTML CSS projects.",
+    imgUrl: "../src/assets/HTMLCSSGrid.png",
+    techStack: ["HTML", "CSS"],
     projectUrl: "https://www.google.com/",
   },
   {
-    title: "E-commerce website",
-    description:
-      "AFeatured e-commerce website built with react.js and tailwind css, allowing users to browse and purchase products online.",
-    imgUrl: "eCommerce",
-    techStack: ["react.js", "tailwind css"],
+    title: "Vanilla javascript projects",
+    category: "javascript",
+    description: "vanillas javascript projects.",
+    imgUrl: "../src/assets/vanilla1.png",
+    techStack: ["javascript"],
+    projectUrl: "https://www.google.com/",
+  },
+  {
+    title: "react javascript projects",
+    category: "react",
+    description: "react.js projects.",
+    imgUrl: "../src/assets/vanilla.png",
+    techStack: ["react.js"],
+    projectUrl: "https://www.google.com/",
+  },
+  {
+    title: "Next.js projects",
+    category: "Next",
+    description: "Next.js  projects.",
+    imgUrl: "../src/assets/vanillaJsLocalStoarage.png",
+    techStack: ["Next.js"],
+    projectUrl: "https://www.google.com/",
+  },
+  {
+    title: "react native projects",
+    category: "native",
+    description: "react native projects.",
+    imgUrl: "../src/assets/vanillaJsResturant.png",
+    techStack: ["react native"],
     projectUrl: "https://www.google.com/",
   },
 ];

@@ -189,7 +189,7 @@ export default function Navbar() {
               className=" background fixed cursor-pointer inset-0 bg-black/50 z-30"
               onClick={toggleMenu}
             ></div>
-            <div className=" offcanvas fixed z-40 space-y-5 bg-[#2C687B] top-0 left-0 bottom-0 p-5 animate-slideIn">
+            <div className=" offcanvas fixed z-40 space-y-5 bg-[#2C687B] top-0 left-0 bottom-0 p-5 animate-slideIn dark:bg-gray-800">
               <div className="flex justify-between items-center border-b border-[#FFF6F6]/40 pb-7">
                 <img
                   src={logo}
@@ -296,6 +296,32 @@ export default function Navbar() {
                       <FontAwesomeIcon icon={faEnvelope} />
                       <span>Contact</span>
                     </NavLink>
+                  </li>
+                  <li>
+                    <button
+                      type="text"
+                      className=""
+                      // className={({ isActive }) => {
+                      //   return `${
+                      //     isActive ? " bg-[#8CC7C4] rounded-full" : ""
+                      //   } hover:text-[#DB1A1A] transition-all duration-200`;
+                      // }}
+                      onClick={toggleTheme}
+                    >
+                      {theme === "dark" ? (
+                        <FontAwesomeIcon
+                          icon={faMoon}
+                          size="xl"
+                          className="text-[#8CC7C4]"
+                        />
+                      ) : (
+                        <FontAwesomeIcon
+                          icon={faSun}
+                          size="xl"
+                          className="text-[#FCBF49]"
+                        />
+                      )}
+                    </button>
                   </li>
                 </ul>
               </div>

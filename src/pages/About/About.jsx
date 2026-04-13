@@ -7,7 +7,7 @@ import aboutGirl from "../../assets/girlPortfolio.svg";
 export default function About() {
   return (
     <>
-      <main className="container">
+      <main className="container  dark:bg-gray-800 dark:text-white">
         <h1 className="section-title head-style">
           About <span className="text-[#2C687B]">Me</span>
         </h1>

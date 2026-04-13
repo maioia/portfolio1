@@ -48,7 +48,7 @@ export default function Contact() {
   });
   return (
     <>
-      <main className="container h-full dark:bg-black dark:text-white">
+      <main className="container h-full  dark:bg-gray-800 dark:text-white">
         <h1 className="head-style text-[#DB1A1A]">get in touch</h1>
         <div className="lg:grid lg:grid-cols-12 gap-4">
           <div className="col-span-6 col-start-2">
@@ -83,7 +83,7 @@ export default function Contact() {
                   onBlur={formik.handleBlur}
                 />
                 {formik.errors.name && formik.touched.name ? (
-                  <p className="bg-[#DB1A1A] text-[#DB1A1A] dark:text-[#FFF6F6] py-1 px-2 rounded-md mt-2 font-medium">
+                  <p className="bg-[#DB1A1A] text-[#FFF6F6] py-1 px-2 rounded-md mt-2 font-medium">
                     * {formik.errors.name}
                   </p>
                 ) : (
@@ -101,7 +101,7 @@ export default function Contact() {
                   onBlur={formik.handleBlur}
                 />
                 {formik.errors.email && formik.touched.email ? (
-                  <p className="bg-[#DB1A1A] text-[#DB1A1A] dark:text-[#FFF6F6] py-1 px-2 rounded-md mt-2 font-medium">
+                  <p className="bg-[#DB1A1A] text-[#FFF6F6] py-1 px-2 rounded-md mt-2 font-medium">
                     *{formik.errors.email}
                   </p>
                 ) : (
@@ -119,7 +119,7 @@ export default function Contact() {
                   onBlur={formik.handleBlur}
                 />
                 {formik.errors.phone && formik.touched.phone ? (
-                  <p className="bg-[#DB1A1A] text-[#DB1A1A] dark:text-[#FFF6F6] py-1 px-2 rounded-md mt-2 font-medium">
+                  <p className="bg-[#DB1A1A] text-[#FFF6F6] py-1 px-2 rounded-md mt-2 font-medium">
                     *{formik.errors.phone}
                   </p>
                 ) : (
@@ -137,7 +137,7 @@ export default function Contact() {
                   onBlur={formik.handleBlur}
                 />
                 {formik.errors.subject && formik.touched.subject ? (
-                  <p className="bg-[#DB1A1A] text-[#DB1A1A] dark:text-[#FFF6F6] py-1 px-2 rounded-md mt-2 font-medium">
+                  <p className="bg-[#DB1A1A] text-[#FFF6F6] py-1 px-2 rounded-md mt-2 font-medium">
                     *{formik.errors.subject}
                   </p>
                 ) : (
@@ -154,7 +154,7 @@ export default function Contact() {
                   onBlur={formik.handleBlur}
                 ></textarea>
                 {formik.errors.message && formik.touched.message ? (
-                  <p className="bg-[#DB1A1A] text-[#DB1A1A] dark:text-[#FFF6F6] py-1 px-2 rounded-md mt-2 font-medium">
+                  <p className="bg-[#DB1A1A] text-[#FFF6F6] py-1 px-2 rounded-md mt-2 font-medium">
                     *{formik.errors.message}
                   </p>
                 ) : (

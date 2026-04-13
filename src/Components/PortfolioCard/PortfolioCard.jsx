@@ -4,33 +4,55 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
+import { projects } from "../../Data.jsx";
+
+import { useLocation } from "react-router";
 export default function PortfolioCard() {
+  const location = useLocation();
+  const category = location.pathname.split("/").pop();
+
+  const filterProjects =
+    category === "featured"
+      ? projects
+      : projects.filter((p) => p.category === category);
+
   return (
     <div className="w-full">
       <Swiper
-        slidesPerView={3}
+        key={category}
         modules={[Pagination, Navigation, Autoplay]}
         loop={true}
         spaceBetween={10}
+        breakpoints={{
+          0: {
+            slidesPerView: 1, // 📱 mobile
+          },
+          640: {
+            slidesPerView: 1, // small tablets
+          },
+          768: {
+            slidesPerView: 2, // tablets
+          },
+          1024: {
+            slidesPerView: 3, // laptops
+          },
+          1280: {
+            slidesPerView: 2, // large screens
+          },
+        }}
         pagination
         navigation={true}
-        autoplay={{delay:1000}}
-        className="bg-red-700"
+        autoplay={{ delay: 1000 }}
+        className=""
       >
-        <SwiperSlide>
-          <div className="w-full h-100 bg-yellow-300 ">
-            
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full h-100 bg-yellow-300 ">text2 here</div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full h-100 bg-yellow-300 ">text3 here</div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="w-full h-100 bg-yellow-300 ">text4 here</div>
-        </SwiperSlide>
+        {filterProjects.map((project, index) => (
+          <SwiperSlide key={index}>
+            <div className="p-4 border rounded-lg">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

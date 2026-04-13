@@ -4,7 +4,7 @@ import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Portfolio() {
   return (
-    <main className="container lg:grid lg:grid-cols-12">
+    <main className="container lg:grid lg:grid-cols-12  dark:bg-gray-800 dark:text-white">
       <h1 className="mx-auto self-center text-3xl head-style lg:col-span-12 text-[#DB1A1A]">
         My portfolio projects
       </h1>
@@ -60,7 +60,7 @@ export default function Portfolio() {
           </li>
         </ul>
       </aside>
-      <div className="col-span-9 m-5 bg-amber-900">
+      <div className="col-span-9 m-5">
         <div className="">
           <Outlet />
         </div>

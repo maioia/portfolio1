@@ -17,22 +17,21 @@ export default function NotFound() {
           </div>
           {/* content */}
           <div className="text-center lg:text-left space-y-5">
-            <h1 className="text-5xl lg:text-6xl font-extrabold text-rose-900">
+            <h1 className="text-5xl lg:text-6xl font-extrabold text-[#DB1A1A]">
               404
             </h1>
-            <p className="text-lg text-rose-700 max-w-md mx-auto lg:mx-0">
+            <p className="lg:text-lg text-[#DB1A1A] max-w-md mx-auto lg:mx-0">
               The page you’re looking for doesn’t exist or was moved. Let’s get
               you back somewhere useful.
             </p>
-            <p className="text-xl">Let’s navigate back to something better. </p>
-            <Link
-              to="/"
-              className="inline-flex items-center gap-3 mt-4 rounded-xl bg-rose-300 px-6 py-3 font-medium text-rose-900 shadow-md hover-bg-rose-900 hover:text-white transition-all duration-300"
-            >
-              <span className="lg:p-2 text-sm p-1 lg:text-xl">
+            <p className="lg:text-xl dark:text-[#FFF6F6]">
+              Let’s navigate back to something better.{" "}
+            </p>
+            <Link to="/" className="">
+              <span className="bg-[#2C687B] dark:bg-[#DB1A1A] border-2 border-[#FFF6F6] rounded-lg shadow-md px-3 py-2 my-4 text-[#FFF6F6] lg:text-md hover:bg-[#FFF6F6] hover:text-[#2C687B] transition-all duration-400 ease-in-out">
                 Back to Home
+                <FontAwesomeIcon icon={faHouse} className="ml-2"/>
               </span>
-              <FontAwesomeIcon icon={faHouse} />
             </Link>
           </div>
         </div>
