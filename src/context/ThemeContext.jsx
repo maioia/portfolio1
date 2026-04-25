@@ -3,17 +3,19 @@ import { createContext, useState, useEffect } from "react";
 export const ThemeContext = createContext();
 
 export default function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "light";
+  });
 
   function toggleTheme() {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
   }
 
   // ✅ Load theme from localStorage (runs once)
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) setTheme(savedTheme);
-  }, []);
+  // useEffect(() => {
+  //   const savedTheme = localStorage.getItem("theme");
+  //   if (savedTheme) setTheme(savedTheme);
+  // }, []);
 
   // ✅ Save theme when it changes
   useEffect(() => {

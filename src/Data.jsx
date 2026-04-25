@@ -1,3 +1,7 @@
+import htmlBootstrap from "../src/assets/HTMLCSSBootstrap.png";
+import vanilla1 from "../src/assets/VanillajsAPI.png";
+import reactImg from "../src/assets/HTMLCSSGrid.png";
+
 export const personalInfo = [
   {
     title: "first name",
@@ -97,7 +101,7 @@ export const projects = [
     title: "HTML CSS Bootstrap",
     category: "featured",
     description: "AFeatured HTML CSS Bootstrap site.",
-    imgUrl: "../src/assets/HTMLCSSBootstrap.png",
+    imgUrl: htmlBootstrap,
     techStack: ["HTML", "css"],
     projectUrl: "https://www.google.com/",
   },
@@ -110,10 +114,26 @@ export const projects = [
     projectUrl: "https://www.google.com/",
   },
   {
-    title: "Vanilla javascript projects",
+    title: "javascript projects1",
     category: "javascript",
-    description: "vanillas javascript projects.",
-    imgUrl: "../src/assets/vanilla1.png",
+    description: "vanilla javascript projects.",
+    imgUrl: vanilla1,
+    techStack: ["javascript"],
+    projectUrl: "https://www.google.com/",
+  },
+  {
+    title: "javascript projects2",
+    category: "javascript",
+    description: "vanilla javascript projects.",
+    imgUrl: vanilla1,
+    techStack: ["javascript"],
+    projectUrl: "https://www.google.com/",
+  },
+  {
+    title: "javascript projects3",
+    category: "javascript",
+    description: "vanilla javascript projects.",
+    imgUrl: vanilla1,
     techStack: ["javascript"],
     projectUrl: "https://www.google.com/",
   },
@@ -121,15 +141,15 @@ export const projects = [
     title: "react javascript projects",
     category: "react",
     description: "react.js projects.",
-    imgUrl: "../src/assets/vanilla.png",
+    imgUrl: reactImg,
     techStack: ["react.js"],
     projectUrl: "https://www.google.com/",
   },
   {
     title: "Next.js projects",
     category: "Next",
-    description: "Next.js  projects.",
-    imgUrl: "../src/assets/vanillaJsLocalStoarage.png",
+    description: "Next.js projects.",
+    imgUrl: reactImg,
     techStack: ["Next.js"],
     projectUrl: "https://www.google.com/",
   },
@@ -137,7 +157,7 @@ export const projects = [
     title: "react native projects",
     category: "native",
     description: "react native projects.",
-    imgUrl: "../src/assets/vanillaJsResturant.png",
+    imgUrl: reactImg,
     techStack: ["react native"],
     projectUrl: "https://www.google.com/",
   },

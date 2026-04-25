@@ -44,3 +44,5 @@ https://colorhunt.co/palette/003049d62828f77f00fcbf49
 - Add Loading screen using Loading component and module.css file
 - Adding RTL or switch to arabic language.
 - Add slider using swiper library to portfolio page.
+- All data are included in data.jsx file and they exported in all components
+- Save theme to LocalStorage
