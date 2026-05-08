@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { personalInfo } from "../../Data.jsx";
 
 export default function PersonalInfo() {

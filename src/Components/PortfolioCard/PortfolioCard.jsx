@@ -47,14 +47,21 @@ export default function PortfolioCard() {
       >
         {filterProjects.map((project, index) => (
           <SwiperSlide key={index}>
-            <div className="p-4 border border-gray-300 space-y-5 rounded-lg">
-              <h3>{project.title}</h3>
+            <div className="p-4 border border-gray-300 space-y-2 *:rounded-sm rounded-lg h-87">
+              <h3 className="text-sm text-black bg-[#FCBF49]  py-1 text-center rounded-sm">
+                {project.title}
+              </h3>
               <img
                 src={project.imgUrl}
                 alt={project.title}
                 className="w-full h-48 object-cover mb-2"
               />
-              <p>{project.description}</p>
+              <p className="text-sm px-2 py-1 text-gray-600 ">
+                {project.description}
+              </p>
+              <span className="text-xs bg-[#DB1A1A] p-1  text-[#FFF6F6]">
+                {project.techStack}
+              </span>
             </div>
           </SwiperSlide>
         ))}

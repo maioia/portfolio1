@@ -1,7 +1,16 @@
 import htmlBootstrap from "../src/assets/HTMLCSSBootstrap.png";
-import vanilla1 from "../src/assets/VanillajsAPI.png";
-import reactImg from "../src/assets/HTMLCSSGrid.png";
-
+import html1 from "../src/assets/HTMLCSSTemplate.png";
+import html3 from "../src/assets/HTMLCSS2.png";
+import html4 from "../src/assets/HTMLCSS3.png";
+import html5 from "../src/assets/HTMLCSSGrid.png";
+import vanilla1 from "../src/assets/vanilla.png";
+import vanilla2 from "../src/assets/vanilla1.png";
+import vanilla3 from "../src/assets/VanillajsAPI.png";
+import vanilla4 from "../src/assets/vanillaJsLocalStoarage.png";
+import vanilla5 from "../src/assets/vanillaJsResturant.png";
+import react1 from "../src/assets/reactJs.png";
+import react2 from "../src/assets/react2.png";
+import next1 from "../src/assets/nextJs.png";
 export const personalInfo = [
   {
     title: "first name",
@@ -106,15 +115,16 @@ export const projects = [
     projectUrl: "https://www.google.com/",
   },
   {
-    title: "HTML CSS projects",
+    title: "HTML CSS Grid",
     category: "featured",
-    description: "AFeatured HTML CSS projects.",
+    description:
+      "AFeatured HTML CSS projects using grid.AFeatured HTML CSS projects using grid.",
     imgUrl: "../src/assets/HTMLCSSGrid.png",
     techStack: ["HTML", "CSS"],
     projectUrl: "https://www.google.com/",
   },
   {
-    title: "javascript projects1",
+    title: "javascript quotes",
     category: "javascript",
     description: "vanilla javascript projects.",
     imgUrl: vanilla1,
@@ -122,43 +132,60 @@ export const projects = [
     projectUrl: "https://www.google.com/",
   },
   {
-    title: "javascript projects2",
+    title: "javascript game project with API",
     category: "javascript",
     description: "vanilla javascript projects.",
-    imgUrl: vanilla1,
+    imgUrl: vanilla2,
     techStack: ["javascript"],
     projectUrl: "https://www.google.com/",
   },
   {
-    title: "javascript projects3",
+    title: "Weather using API",
     category: "javascript",
-    description: "vanilla javascript projects.",
-    imgUrl: vanilla1,
+    description: "Search location to represent weather of this Location.",
+    imgUrl: vanilla3,
     techStack: ["javascript"],
     projectUrl: "https://www.google.com/",
   },
   {
-    title: "react javascript projects",
+    title: "Add remove data project",
+    category: "javascript",
+    description: "Add and Remove data using localStorage.",
+    imgUrl: vanilla4,
+    techStack: ["javascript"],
+    projectUrl: "https://www.google.com/",
+  },
+  {
+    title: "Restaurant",
+    category: "javascript",
+    description:
+      "Restaurant website view menus of different countries using API.",
+    imgUrl: vanilla5,
+    techStack: ["javascript"],
+    projectUrl: "https://www.google.com/",
+  },
+  {
+    title: "portfolio",
     category: "react",
-    description: "react.js projects.",
-    imgUrl: reactImg,
+    description: "Portfolio project using react.js.",
+    imgUrl: react1,
     techStack: ["react.js"],
     projectUrl: "https://www.google.com/",
   },
   {
-    title: "Next.js projects",
-    category: "Next",
-    description: "Next.js projects.",
-    imgUrl: reactImg,
-    techStack: ["Next.js"],
+    title: "E-commerce freshcart",
+    category: "react",
+    description: "E-commerce website Freshcart.",
+    imgUrl: react2,
+    techStack: ["react.js"],
     projectUrl: "https://www.google.com/",
   },
   {
-    title: "react native projects",
-    category: "native",
-    description: "react native projects.",
-    imgUrl: reactImg,
-    techStack: ["react native"],
+    title: "NEXT.js portfolio",
+    category: "next",
+    description: "NEXT.js portfolio website.",
+    imgUrl: next1,
+    techStack: ["next.js"],
     projectUrl: "https://www.google.com/",
   },
 ];

@@ -11,7 +11,7 @@ export default function Home({ toggleTheme }) {
   return (
     <>
       <main className="px-7 dark:bg-gray-800 dark:text-white">
-        <section className="lg:flex lg:flex-row flex-col justify-evenly items-center min-h-screen">
+        <section className="lg:flex lg:flex-row flex-col justify-evenly items-center min-h-screen space-y-5">
           <div className="">
             <img
               src={Profile}
@@ -36,7 +36,7 @@ export default function Home({ toggleTheme }) {
             </div>
             <div className="flex justify-evenly items-center gap-3">
               <Link to="/about" className="">
-                <span className="bg-[#2C687B] border-2 border-[#FFF6F6] rounded-lg shadow-md px-2 py-3 text-[#FFF6F6] lg:text-md hover:bg-[#FFF6F6] hover:text-[#2C687B] transition-all duration-400 ease-in-out">
+                <span className="bg-[#2C687B] border-2 border-[#FFF6F6] lg:rounded-lg rounded-md shadow-md px-1 py-2 lg:px-2 lg:py-3 text-[#FFF6F6] text-sm my-5 hover:bg-[#FFF6F6] hover:text-[#2C687B] transition-all duration-400 ease-in-out">
                   More About Me
                   <FontAwesomeIcon icon={faArrowRightToBracket} />
                 </span>

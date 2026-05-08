@@ -24,7 +24,7 @@ export default function Portfolio() {
                 return `${isActive ? "bg-[#DB1A1A] text-[#FFF6F6]" : ""} w-full p-3 text-[#8CC7C4]`;
               }}
             >
-              HTML CSS projects <FontAwesomeIcon icon={faCaretRight} />
+              All projects <FontAwesomeIcon icon={faCaretRight} />
             </NavLink>
           </li>
           <li>

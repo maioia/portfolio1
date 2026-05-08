@@ -11,12 +11,6 @@ export default function ThemeProvider({ children }) {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
   }
 
-  // ✅ Load theme from localStorage (runs once)
-  // useEffect(() => {
-  //   const savedTheme = localStorage.getItem("theme");
-  //   if (savedTheme) setTheme(savedTheme);
-  // }, []);
-
   // ✅ Save theme when it changes
   useEffect(() => {
     localStorage.setItem("theme", theme);

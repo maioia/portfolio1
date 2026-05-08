@@ -4,6 +4,7 @@ import Loading from "../Loading/Loading.jsx";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function AppLayout({ toggleTheme, theme }) {
+  
   const location = useLocation();
   const navigation = useNavigation();
   return (

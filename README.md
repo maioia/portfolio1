@@ -1,5 +1,16 @@
 # Hi 👋, I'm Mai
 
+# Hey there 👋 I'm Mai
+
+I'm a Frontend Developer who loves creating beautiful and functional web interfaces.
+
+From dark mode toggles to smooth animations, I enjoy adding the small details that make a big difference.
+
+✨ I build this project with:
+React • Tailwind • JavaScript
+
+🚀 Always learning, always building.
+
 # Project Packages
 
 [1] Design UI🎨 ---> TailwindCSS
